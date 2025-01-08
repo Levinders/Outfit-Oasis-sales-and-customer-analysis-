@@ -127,6 +127,232 @@ GROUP BY category;
 ```
 
 
-**2**
+**2. Which days of the week generate the highest sales revenue?**
+
+```sql
+
+SELECT 
+        CASE 
+            WHEN EXTRACT(dow FROM sale_date) = 0 THEN 'Monday' 
+            WHEN EXTRACT(dow FROM sale_date) = 1 THEN 'Tuesday'
+            WHEN EXTRACT(dow FROM sale_date) = 2 THEN 'Wednesday'
+            WHEN EXTRACT(dow FROM sale_date) = 3 THEN 'Thursday'
+            WHEN EXTRACT(dow FROM sale_date) = 4 THEN 'Friday'
+            WHEN EXTRACT(dow FROM sale_date) = 5 THEN 'Saturday'
+            WHEN EXTRACT(dow FROM sale_date) = 6 THEN 'Sunday'
+        END "days_of_the_week",
+        SUM(total_sale) AS total_sale_revenue,
+        SUM(quantity) AS total_qty_sold
+FROM retail_sales 
+GROUP BY days_of_the_week ORDER BY total_sale_revenue DESC;
+
+```
 
 
+**3. What are the peak sales hours and shift times?**
+
+```sql
+SELECT 
+        COUNT(transactions_id) AS total_sales, 
+        gender,
+        CASE 
+            WHEN EXTRACT(HOUR FROM sale_time) < 12 THEN  'Morning shift'
+            WHEN EXTRACT(HOUR FROM sale_time) BETWEEN 12 AND 19 THEN  'Afternoon shift'
+            ELSE 'Night shift'
+        END AS shift 
+FROM retail_sales
+GROUP BY ROLLUP(shift, gender)
+ORDER BY COUNT(transactions_id) DESC, shift DESC;
+
+```
+
+
+**4. What are our gross and net revenue for each year?**
+
+```sql
+SELECT 
+        EXTRACT(YEAR FROM sale_date) AS year,
+        SUM(total_sale) AS gross_sales,
+        ROUND(SUM(total_sale) - SUM(cogs)) AS net_sales
+FROM retail_sales
+GROUP BY ROLLUP(EXTRACT(YEAR FROM sale_date))
+ORDER BY year;
+```
+
+
+### Customer Insights
+**1. How many unique customers purchased from us?**
+
+```sql
+
+SELECT 
+        EXTRACT(YEAR FROM sale_date) AS year,
+        COUNT(DISTINCT customer_id) 
+FROM retail_sales 
+GROUP BY EXTRACT(YEAR FROM sale_date);
+
+```
+
+
+**2. What is the gender distribution of customers?**
+
+
+```sql
+
+SELECT 
+        COUNT(DISTINCT customer_id) AS num_of_cust,
+        gender
+FROM retail_sales 
+GROUP BY gender;
+
+```
+
+
+**3. What is the average age of customers for each category?**
+
+```sql
+SELECT 
+        category,
+        ROUND(AVG(age)) AS avg_customer_age
+FROM retail_sales 
+GROUP BY category;
+
+```
+
+
+### Product Performance
+**1. Which category has the highest average sales revenue?**
+
+```sql
+
+SELECT
+        category,
+        ROUND(AVG(total_sale)) AS total_avg_sales
+FROM retail_sales 
+GROUP BY category
+ORDER BY total_avg_sales DESC
+LIMIT 1;
+
+```
+
+
+**2. What is the most frequently purchased category?**  
+
+```sql
+
+SELECT 
+        category,
+        COUNT(transactions_id) AS total_purchases
+FROM retail_sales 
+GROUP BY category
+ORDER BY total_purchases DESC
+LIMIT 1;
+
+```
+
+
+### Profitability
+**1. What is the average profit margin by category (Total Sale - COGS)?**
+
+```sql
+
+    SELECT
+            category,
+            ROUND(AVG(total_sale - cogs)) AS profit_margin
+    FROM retail_sales 
+    GROUP BY category;
+
+```
+
+
+**2. Which category contributes the most to overall profitability?**
+
+```sql
+
+    SELECT 
+            category,
+            ROUND(SUM(total_sale - cogs)) AS net_profit
+    FROM retail_sales
+    GROUP BY category
+    ORDER BY net_profit DESC
+    LIMIT 1;
+
+```
+
+
+### Seasonal Trends
+**1. How do monthly sales trends vary across product categories?**
+
+```sql
+
+SELECT
+        category,
+        EXTRACT(MONTH FROM sale_date) AS month,
+        COUNT(transactions_id) AS total_sales
+FROM retail_sales
+GROUP BY category, MONTH
+ORDER BY MONTH ASC, total_sales DESC;
+
+```
+
+
+**2. What is the most loyal customer age group of sales?                                                                                
+
+```sql
+
+SELECT
+    CASE 
+        WHEN age < 39 THEN 'Younger (below 39)'  
+        WHEN age BETWEEN 40 AND 59 THEN 'Middle aged (40 - 59)'
+        ELSE 'Older (above 60)'  
+    END AS cust_age_group,
+    COUNT(transactions_id) AS total_sales
+FROM retail_sales
+GROUP BY cust_age_group
+ORDER by total_sales DESC;
+
+```
+
+
+**2. Who are the most performing customers?**
+
+```sql
+SELECT 
+        DISTINCT customer_id AS customers,
+        COUNT(transactions_id) AS total_sales,
+        SUM(total_sale) AS total_order_amt
+FROM retail_sales
+GROUP BY customers
+ORDER BY total_sales DESC;               
+
+```
+
+
+### Operational Insights
+**1. What is the average order size (quantity) by category?**
+
+```sql
+SELECT
+        category,
+        ROUND(AVG(quantity)) avg_order_qty
+FROM retail_sales
+GROUP BY category
+ORDER BY avg_order_qty DESC;
+
+```
+
+
+**2. Are there any significant price differences between categories?**
+
+```sql
+
+SELECT
+        category,
+        price_per_unit
+FROM retail_sales
+GROUP BY category, price_per_unit
+ORDER BY price_per_unit DESC, category;
+
+-- End of the EDA
+
+```
