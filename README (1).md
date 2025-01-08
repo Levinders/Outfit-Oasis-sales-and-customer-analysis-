@@ -113,8 +113,8 @@ SET gender =
 ### 3. Exploratory Data Analysis
 The following queries were developed to answer the business questions
 
-## Sales Performance
-**1. What is the total sales revenue by category? 
+### Sales Performance
+**1. What is the total sales revenue by category?**
 
 ```sql
 
@@ -127,6 +127,6 @@ GROUP BY category;
 ```
 
 
-**2
+**2**
 
 
