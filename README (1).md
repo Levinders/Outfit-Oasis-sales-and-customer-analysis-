@@ -19,7 +19,8 @@ This project focuses on analyzing sales and customer data from Outfit Oasis db t
 * **Tools Used:**  
   * SQL  
   * VSCode  
-  * PostgreSQL  
+  * PostgreSQL
+     
 * **Processes Followed:**  
   * I got the sales dataset from a repo on Github  
   * Created a table named ‘retail\_sales’ in Outfit Oasis sales db  
@@ -27,8 +28,7 @@ This project focuses on analyzing sales and customer data from Outfit Oasis db t
   * Data cleaning \- identified, removed & updated null, and standardized records  
   * Exploratory data analysis operations to answer business questions
 
-**Project Structure**  
- 
+# Project Structure 
 
 * **Database**  
   * Table Creation: A table named retail\_sales is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount
