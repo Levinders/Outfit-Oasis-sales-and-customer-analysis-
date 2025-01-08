@@ -31,7 +31,7 @@ This project focuses on analyzing sales and customer data from Outfit Oasis db t
 
 # Project Structure 
 
-1. Database  
+* **1. Database** 
   * **Table Creation:** A table named retail_sales is created to store the sales data. The table has columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount
 
 ```sql
