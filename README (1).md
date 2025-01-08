@@ -61,9 +61,9 @@ SELECT * FROM retail_sales;  -- Check table creation & correct column names
 
 ```
 **2. Data Exploration & Cleaning**
-* **Record: select all columns and delete all records with empty total_sale which indicates invalid transactions
-* **Null: updated empty age column by gender for valid transactions
-* **Data transformation: changed genders specified as 'M' to 'Male and 'F' to 'Female. Remove space from ' Male'
+* **Record:** select all columns and delete all records with empty total_sale which indicates invalid transactions
+* **Null:** updated empty age column by gender for valid transactions
+* **Data transformation:** changed genders specified as 'M' to 'Male and 'F' to 'Female. Remove space from ' Male'
 
 ```sql
 
@@ -107,8 +107,10 @@ SET gender =
         WHERE gender IN ('M', 'F') OR gender NOT LIKE '%Female%';
 
 ```
+
+
 **3. Exploratory Data Analysis
-The following queries was developed to answer the business questions
+The following queries were developed to answer the business questions
 
 * **Sales Performance
 **1. What is the total sales revenue by category? 
@@ -122,5 +124,8 @@ FROM retail_sales
 GROUP BY category;
 
 ```
+
+
+**2
 
 
