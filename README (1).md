@@ -31,7 +31,7 @@ This project focuses on analyzing sales and customer data from Outfit Oasis db t
 
 # Project Structure 
 
-**1. Database** 
+### 1. Database
   * **Table Creation:** A table named retail_sales is created to store the sales data. The table has columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount. Sales data was imported from the db to this table.
 
 ```sql
@@ -60,7 +60,8 @@ RENAME COLUMN quantiy TO quantity;
 SELECT * FROM retail_sales;  -- Check table creation & correct column names
 
 ```
-**2. Data Exploration & Cleaning**
+
+### 2. Data Exploration & Cleaning
 * **Record:** select all columns and delete all records with empty total_sale which indicates invalid transactions
 * **Null:** updated empty age column by gender for valid transactions
 * **Data transformation:** changed genders specified as 'M' to 'Male and 'F' to 'Female. Remove space from ' Male'
@@ -109,10 +110,10 @@ SET gender =
 ```
 
 
-**3. Exploratory Data Analysis
+### 3. Exploratory Data Analysis
 The following queries were developed to answer the business questions
 
-* **Sales Performance
+## Sales Performance
 **1. What is the total sales revenue by category? 
 
 ```sql
