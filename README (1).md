@@ -381,4 +381,4 @@ This project is part of my stellar portfolio projects, showcasing the SQL skills
 
 - **[LinkedIn](https://www.linkedin.com/in/raphaellevinder/)**
 - **[Email](mailto:raphaellevinder@gamil.com)**
-- **[Website](https://gckarchive/)**
+- **[Website](https://gckarchive.com/)**
