@@ -356,3 +356,19 @@ ORDER BY price_per_unit DESC, category;
 -- End of the EDA
 
 ```
+
+
+# Highlights of Findings
+1. Outfit Oasis is a profitable business as sales revenue is in the range of 310k+ across three categories
+2. The most selling category in the store is Clothing. Marketing can focus on upselling other categories in that aisle
+3. The first 5 customers of the business are the most loyal out of the 200+ customer base.
+4. Afternoon shift and workers do more sales compared to the other shifts 
+5. Outfit Oasis has the same proportion of customers by gender
+
+
+# Conclusion
+This analysis provided valuable insights into Outfit Oasis' sales performance, customer behavior, product trends, and profitability for the 2022-2023 business period. However, data for 2024 was notably absent from the dataset, and this absence likely stems from operational changes within the company.
+
+In December 2024, Outfit Oasis undertook a major migration of its data infrastructure to a more robust system to accommodate growing data needs and enhance analytics capabilities. This transition caused a temporary gap in data collection as sales and customer records from 2024 were still in the process of being integrated into the new database at the time of this analysis.
+
+Despite this gap, the comprehensive findings from the available data highlight clear trends and actionable opportunities that can shape operational and marketing strategies for 2025 and beyond.
