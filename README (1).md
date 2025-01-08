@@ -2,9 +2,9 @@
 
 # Overview
 
-Outfit Oasis is a leading retail store that specializes in three main product categories: Beauty, Electronics, and Clothing. With a strong commitment to customer satisfaction and product quality, the company serves a diverse customer base and has established itself as a trusted name in the retail sector.
+Outfit Oasis is a leading retail store that specializes in three main product categories: Beauty, Electronics, and Clothing. With a strong commitment to customer satisfaction and product quality, the company serves 200+ diverse age groups of customers and has established itself as a trusted name in the retail sector.
 
-This project focuses on analyzing sales and customer data from Outfit Oasis db to uncover insights that will drive strategic decisions for marketing and operations in 2025\. By leveraging historical data from 2022 and 2023, the analysis aims to identify key trends, customer behavior patterns, and opportunities for growth.
+This project focuses on analyzing sales and customer data from Outfit Oasis database to draw insights that will drive strategic decisions for marketing and operations in 2025\. By leveraging historical data from 2022 and 2023, the analysis aims to identify key trends, customer behavior patterns, sales performance, and growth opportunities.
 
 # Objectives & Details
 
@@ -20,11 +20,13 @@ This project focuses on analyzing sales and customer data from Outfit Oasis db t
   * SQL  
   * VSCode  
   * Postgres
-  * Excel for project tracking
+  * Excel for project status & tracking
      
 ### Processes Followed:  
-  * I got the sales dataset from a repo on GitHub  
-  * Created a table named ‘retail\_sales’ in Outfit Oasis sales db  
+  * Derived business/analytical questions from the business request which came from the sales manager - Chloe
+  * Feedback from Chloe on the business questions and draft of the business demand overview
+  * Established connection to the DB (I got the sales dataset from a repo on GitHub)  
+  * Created a table named ‘retail\_sales’ in Outfit Oasis sales DB  
   * Imported sales data into the table  
   * Data cleaning \- identified, removed & updated null, and standardized records  
   * Exploratory data analysis operations to answer business questions. This is the scope of this project
@@ -32,7 +34,7 @@ This project focuses on analyzing sales and customer data from Outfit Oasis db t
 # Project Structure 
 
 ### 1. Database
-  * **Table Creation:** A table named retail_sales is created to store the sales data. The table has columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount. Sales data was imported from the db to this table.
+  * **Table Creation:** A table named retail_sales is created to store the sales data. The table has columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount. Sales data was imported from the DB to this table.
 
 ```sql
 
@@ -296,7 +298,7 @@ ORDER BY MONTH ASC, total_sales DESC;
 ```
 
 
-**2. What is the most loyal customer age group of sales?                                                                                
+**2. What is the most loyal customer age group by sales?                                                                                
 
 ```sql
 
@@ -359,16 +361,24 @@ ORDER BY price_per_unit DESC, category;
 
 
 # Highlights of Findings
-1. Outfit Oasis is a profitable business as sales revenue is in the range of 310k+ across three categories
+1. Outfit Oasis is a profitable business as sales revenue is in the range of $310k+ across three categories
 2. The most selling category in the store is Clothing. Marketing can focus on upselling other categories in that aisle
-3. The first 5 customers of the business are the most loyal out of the 200+ customer base.
+3. The first five ever customers of the business are the most loyal out of the 200+ customer base.
 4. Afternoon shift and workers do more sales compared to the other shifts 
 5. Outfit Oasis has the same proportion of customers by gender
 
 
 # Conclusion
-This analysis provided valuable insights into Outfit Oasis' sales performance, customer behavior, product trends, and profitability for the 2022-2023 business period. However, data for 2024 was notably absent from the dataset, and this absence likely stems from operational changes within the company.
+This analysis provided valuable insights into Outfit Oasis' sales performance, customer insight, product by category trends, and profitability for the 2022-2023 business period. However, data for 2024 was notably absent from the dataset, and this absence likely stems from operational changes within the company.
 
-In December 2024, Outfit Oasis undertook a major migration of its data infrastructure to a more robust system to accommodate growing data needs and enhance analytics capabilities. This transition caused a temporary gap in data collection as sales and customer records from 2024 were still in the process of being integrated into the new database at the time of this analysis.
+In December 2024, Outfit Oasis undertook a major migration of its data infrastructure to a more robust system to accommodate growing data needs and enhance analytical capabilities. This transition caused a temporary gap in data collection as sales and customer transactions from 2024 were still in the process of being integrated into the new database at the time of this analysis.
 
 Despite this gap, the comprehensive findings from the available data highlight clear trends and actionable opportunities that can shape operational and marketing strategies for 2025 and beyond.
+
+
+# Author - Raphael Levinder
+This project is part of my stellar portfolio projects, showcasing the SQL skills essential for any data analyst role. If you have any questions, or feedback, or would like to collaborate, feel free to get in touch!
+
+[LinkedIn](https://www.linkedin.com/in/raphaellevinder/)
+[Email](mailto:raphaellevinder@gamil.com)
+[Website](https://gckarchive/)
