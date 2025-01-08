@@ -19,14 +19,15 @@ This project focuses on analyzing sales and customer data from Outfit Oasis db t
 * **Tools Used:**  
   * SQL  
   * VSCode  
-  * PostgreSQL
+  * Postgres
+  * Excel for project tracking
      
 * **Processes Followed:**  
   * I got the sales dataset from a repo on GitHub  
   * Created a table named ‘retail\_sales’ in Outfit Oasis sales db  
   * Imported sales data into the table  
   * Data cleaning \- identified, removed & updated null, and standardized records  
-  * Exploratory data analysis operations to answer business questions
+  * Exploratory data analysis operations to answer business questions. This is the scope of this project
 
 # Project Structure 
 
