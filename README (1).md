@@ -1,4 +1,4 @@
-![Outfit-Oasis-sales-and-customer-analysis](outfitoasisbanner(2).png)
+![Outfit-Oasis-sales-and-customer-analysis](outfitoasisbanner%282%29.png)
 
 # Overview
 
