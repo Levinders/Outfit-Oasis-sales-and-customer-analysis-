@@ -33,3 +33,31 @@ This project focuses on analyzing sales and customer data from Outfit Oasis db t
 * **Database**  
   * Table Creation: A table named retail_sales is created to store the sales data. The table has columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount
 
+```sql
+
+   -- Create retail sales table
+DROP TABLE IF EXISTS retail_sales;
+
+CREATE TABLE retail_sales
+    (
+        transactions_id	INT PRIMARY KEY,
+        sale_date DATE,
+        sale_time TIME,
+        customer_id	INT,
+        gender VARCHAR(10),
+        age INT,
+        category VARCHAR(15),
+        quantiy	INT,
+        price_per_unit FLOAT,
+        cogs FLOAT,
+        total_sale	FLOAT	
+    );
+
+ALTER TABLE retail_sales 
+RENAME COLUMN quantiy TO quantity;
+
+SELECT * FROM retail_sales;  -- Check table creation & correct column names
+
+```
+  * 
+
