@@ -8,7 +8,7 @@ This project focuses on analyzing sales and customer data from Outfit Oasis db t
 
 # Objectives & Details
 
-* **Business Analysis:** a descriptive EDA to answer the following business questions   
+### Business Analysis: a descriptive EDA to answer the following business questions   
   * Sales performance  
   * Customer insight  
   * Product performance evaluation  
@@ -16,13 +16,13 @@ This project focuses on analyzing sales and customer data from Outfit Oasis db t
   * Seasonal trends identification  
   * Operational insight  
       
-* **Tools Used:**  
+### Tools Used: 
   * SQL  
   * VSCode  
   * Postgres
   * Excel for project tracking
      
-* **Processes Followed:**  
+### Processes Followed:  
   * I got the sales dataset from a repo on GitHub  
   * Created a table named ‘retail\_sales’ in Outfit Oasis sales db  
   * Imported sales data into the table  
