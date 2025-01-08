@@ -379,6 +379,6 @@ Despite this gap, the comprehensive findings from the available data highlight c
 # Author - Raphael Levinder
 This project is part of my stellar portfolio projects, showcasing the SQL skills essential for any data analyst role. If you have any questions, or feedback, or would like to collaborate, feel free to get in touch!
 
-[LinkedIn](https://www.linkedin.com/in/raphaellevinder/)
-[Email](mailto:raphaellevinder@gamil.com)
-[Website](https://gckarchive/)
+- **[LinkedIn](https://www.linkedin.com/in/raphaellevinder/)**
+- **[Email](mailto:raphaellevinder@gamil.com)**
+- **[Website](https://gckarchive/)**
