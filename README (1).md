@@ -1,4 +1,4 @@
-![Outfit Oasis Banner](Outfit-Oasis-banner.png)
+![Outfit-Oasis-banner.png](https://github.com/Levinders/Outfit-Oasis-sales-and-customer-analysis-/blob/main/Outfit%20Oasis%20banner.png)
 
 # Overview
 
