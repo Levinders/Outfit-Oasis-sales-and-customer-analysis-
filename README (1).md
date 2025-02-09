@@ -1,4 +1,4 @@
-![Outfit Oasis Banner](Outfit%20Oasis%20banner%20%282%29.png)
+![Outfit Oasis Banner](Outfit-Oasis-banner.png)
 
 # Overview
 
