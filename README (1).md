@@ -8,7 +8,7 @@ This project focuses on analyzing sales and customer data from Outfit Oasis data
 
 # Objectives & Details
 
-### Business Analysis: a descriptive EDA to answer the following business questions   
+### A descriptive EDA operations to answer questions in this areas:
   * Sales performance  
   * Customer insight  
   * Product performance evaluation  
@@ -20,7 +20,8 @@ This project focuses on analyzing sales and customer data from Outfit Oasis data
   * SQL  
   * VSCode  
   * Postgres
-  * Excel for project status & tracking
+  * Excel (project tracking)
+  * Looker Studio (visualization)
      
 ### Processes Followed:  
   * Derived business/analytical questions from the business request which came from the sales manager - Chloe
