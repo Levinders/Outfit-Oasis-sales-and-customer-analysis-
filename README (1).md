@@ -4,7 +4,7 @@
 
 Outfit Oasis is a leading retail store that specializes in three main product categories: Beauty, Electronics, and Clothing. With a strong commitment to customer satisfaction and product quality, the company serves 200+ diverse age groups of customers and has established itself as a trusted name in the retail sector.
 
-This project focuses on analyzing sales and customer data from Outfit Oasis database to draw insights that will drive strategic decisions for marketing and operations in 2025\. By leveraging historical data from 2022 and 2023, the analysis aims to identify key trends, customer behavior patterns, sales performance, and growth opportunities.
+This project focuses on analyzing sales and customer data from Outfit Oasis database to draw insights that will drive strategic decisions for marketing and operations in 2025\. By leveraging historical data from 2022 and 2023, this analysis aims to identify key trends, customer buying patterns, sales performance, and growth opportunities.
 
 # Objectives & Details
 
