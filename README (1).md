@@ -30,7 +30,7 @@ This project focuses on analyzing sales and customer data from Outfit Oasis data
   * Created a table named ‘retail\_sales’ in Outfit Oasis sales DB  
   * Imported sales data into the table  
   * Data cleaning \- identified, removed & updated null, and standardized records  
-  * Exploratory data analysis operations to answer business questions. This is the scope of this project
+  * Exploratory data analysis operations to answer business questions. 
 
 # Project Structure 
 
@@ -370,9 +370,9 @@ ORDER BY price_per_unit DESC, category;
 
 
 # Conclusion
-This analysis provided valuable insights into Outfit Oasis' sales performance, customer insight, product by category trends, and profitability for the 2022-2023 business period. However, data for 2024 was notably absent from the dataset, and this absence likely stems from operational changes within the company.
+This analysis provided valuable insights into Outfit Oasis' sales performance, customer insight, product by category trends, and profitability for the 2022-2023 business period. However, data for 2024 was notably absent from the dataset, and this absence stems from inconclusive data migration operational changes within the company.
 
-In December 2024, Outfit Oasis undertook a major migration of its data infrastructure to a more robust system to accommodate growing data needs and enhance analytical capabilities. This transition caused a temporary gap in data collection as sales and customer transactions from 2024 were still in the process of being integrated into the new database at the time of this analysis.
+In December 2024, Outfit Oasis undertook a major migration of its data infrastructure to a more robust system to accommodate growing data needs and enhance analytical capabilities. This transition caused a temporary gap in data collection as sales and customer transactions from 2024 were still in the process of being integrated into the new data warehouse at the time of this analysis.
 
 Despite this gap, the comprehensive findings from the available data highlight clear trends and actionable opportunities that can shape operational and marketing strategies for 2025 and beyond.
 
